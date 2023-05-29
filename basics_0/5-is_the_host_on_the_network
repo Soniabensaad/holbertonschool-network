@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Check if an argument is passed
 if [ $# -eq 0 ]; then
   echo "Usage: $0 {IP_ADDRESS}"
@@ -9,4 +10,4 @@ fi
 ip_address=$1
 
 # Ping the IP address
-ping -c 5 $ip_address
+ping -c 5 "$ip_address"
